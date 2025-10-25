@@ -1,0 +1,39 @@
+﻿@*@model IEnumerable<lb2engineering.Models.FreePDFdownloads>*@
+@model IPagedList<FreePDFdownloads>
+@{
+    ViewBag.Title = "Free PDF";
+}
+
+
+<h2>ALL PDF DOWNLOADS</h2>
+<h3>search are case sensitive</h3>
+<p class="MyBlankSpace1"> </p>
+
+@*NUMBER OF BOOKS: @Model.Count()*@
+<p>
+   @* @Html.ActionLink("Create New", "Create")*@ 
+</p>
+<form method="get" action="@Url.Action("Index")" 
+    data-otf-ajax="true" data-otf-target="#FreePDFdownloadsList">
+    <div class="MyCenter">
+    <input type="search" name="searchTerm" data-otf-autocomplete="@Url.Action("Autocomplete")" />
+    <input type="submit" value="SEARCH" />
+    </div>
+</form>
+
+@*@using (Ajax.BeginForm(
+    new AjaxOptions
+    {
+        HttpMethod = "get",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "FreePDFdownloadsList"
+    }))
+
+    
+{
+    <input type="search" name="searchTerm" />
+    <input type="submit" value="SEARCH" />
+}
+*@
+
+@Html.Partial("_FreePDFdownloads", Model)

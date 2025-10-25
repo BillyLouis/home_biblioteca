@@ -1,0 +1,24 @@
+﻿@*@model IEnumerable<lb2engineering.Models.FreePDFdownloads>*@
+@model IPagedList<FreePDFdownloads>
+
+<div id="FreePDFdownloadsList">
+    <div class="pagedList" data-otf-target="#FreePDFdownloadsList">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+       PagedListRenderOptions.MinimalWithItemCountText)
+    </div>
+
+
+    @foreach (var item in Model)
+    {
+        <div class="pdfView">
+            <h4>@item.Name <pre style="float: left; width: 30%;"> @Html.ActionLink("download", "download", new { id=item.Id })</pre></h4>
+            <p>   </p>
+
+        </div>
+    }
+    <div class="MyBlankSpace1"> </div>
+
+     <div class="MyCenter">
+         @Html.ActionLink("Back To Page 1", "Index")
+     </div> 
+</div>

@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+
+            <p class="marquee"><span>
+                <img src="~/Images/AET-gallery-7.JPG" alt="PCB" />
+                <img src="~/Images/AET-gallery-8.JPG" alt="Electronics" />
+                <img src="~/Images/AET-gallery-4.JPG" alt="Masonery" />
+                <img src="~/Images/AET-gallery-5.JPG" alt="Metalworking" />
+                <img src="~/Images/AET-gallery-6.JPG" alt="FlightSim" />
+                <img src="~/Images/MPU1.JPG" alt="Software" />
+                <img src="~/Images/AET-gallery-9.JPG" alt="Welding" />
+                               </span>
+
+            </p>
+        </div>
+    </section>
+}
+
+<div style="float: left; width: 30%;">
+    <h1>AREA OF RESEARCH</h1>
+    <ul>
+        <li>Qt Application, GUI Apps & DirectX11</li>
+        <li>OpenGL & OpenCV</li>
+        <li>Renewable Energy, Switching Power</li>
+        <li>Unmanned Aerial Vehicles (UAV), Robotics</li>
+        <li>RF Signals & Electromagnetism</li>
+        <li>System Controls, CNC & PLC</li>
+    </ul>
+</div>
+<div style="float: right; width: 30%;">
+    <h1>AREA OF INTEREST</h1>
+    <ul>
+        <li>Control and Automation Systems</li>
+        <li>FPGA/ASIC/VLSI Engineering, SoC & CMOS Design</li>
+        <li>Electronic Engineering, PV Module</li>
+        <li>MicroControllers & Embedded Systems</li>
+        <li>Logistics & Application Engineering</li>
+        <li>Software Development & Engineering</li>
+    </ul>
+</div>
+<p class="MyBlankSpace1">
+    <p class="MyBlankSpace1">
+        <p class="MyBlankSpace1">
+            <p class="MyBlankSpace1">
+                <p class="MyBlankSpace1">
+                </p>
+            </p>
+        </p>
+    </p>
+</p>
+<div class="MyCenter">
+ <h1>ACADEMIC AND HOBBYIST PROJECTS</h1>
+</div>
+<p class="MyBlankSpace1"> </p>
+<div style="float:left; width: 40%;">
+    <h3>OFF GRID SOLAR PANEL INSTALLATION</h3>
+    <h5>This is a project I made for a friend who wanted to cut his power consumption by up to 75 percent.
+        He did not want to go to the hassle of getting involved with a solar company where one has to sign
+        a 30 years contract. Additionally, Nevada Laws state that one cannot go off-gid, there has to be a 
+        power line feeding electricity to the house at all time. Thus, to comply to all these laws only the fridge
+        and outdoor lights are connected to the power grid, everything else such as TV, Washing machine and AC are connected to
+        the off-grid system. 
+         <img src="~/Images/CaptureGazeboPanels.JPG" alt="Solar Panel" />
+    </h5>
+<p class="MyBlankSpace1"> </p>
+    <h3>CHIP DESIGN WITH CADENCE HDL</h3>
+    <h5>This is an academic project where I had to design a chip through cadence virtuoso. It is a 40 pins chip with a 31 Stage
+        Ring Oscillator and a Buck Converter. The ring oscillator has a buffer for driving a 20pF off-chip load. The Buck Converter
+        has various input voltage from 4.5V to 5.5V and a steady output voltage of of 3.75V with 100mA current. There are additional
+        components on the chip such as NAND & NOR gates, voltage divider, implemented with NWELL and high resistance poly2.
+        <img src="~/Images/IMG_0579Chip.JPG" alt="Chip" />
+    </h5>
+<p class="MyBlankSpace1"> </p>
+    <h3>WAVEFORM GENERATOR (25Hz TO 3MHz)</h3>
+    <h5>This is a project that I did when I was in the need of a wavform generator to do late night electrical homework and labs.
+        I could not stay in school until midnight like other students do because I like my coziness. Hence, I build a waveform generator
+        that has an output frequency of 25Hz to 3MHz.
+        <img src="~/Images/IMG_0578Wave1.JPG" alt="Waveform" />
+        <img src="~/Images/IMG_0143waveOut.JPG" alt="Waveform" />
+    </h5>
+</div>
+
+<div style="float:right; width: 40%;">
+    <h3>CAPSTONNE PROJECT 1 & 2</h3>
+    <h5>This is a project that took me 2 semesters to complete when I was an undergraduate student. It consist of a camera, a dolly,
+         OpenCV and Embedded system devices where the functionality is for the camera to automatically follow a person or a group 
+        of person on stage while recording.
+        <img src="~/Images/CaptonePoster1.PNG" alt="Capstone" />
+    </h5>
+<p class="MyBlankSpace1"> </p>
+    <h3>AUTOMATED CUP FILLING-STOPPING JUICE DISPENSER</h3>
+    <h5>In this academic project I used microcontrollers such as Atmega328P and IR sensors to design a juice dispencer. There are 3 
+        platforms in which 3 cups can be placed. Once an empty cup is place a platform, the IR sensor send a signal to the microcontroller
+        to start the filling process and as soon as the cup is filled the juice automatically stops pouring into the cup.
+         <img src="~/Images/CaptureBoard.JPG" alt="Dispenser" />
+        <img src="~/Images/CaptureHardSchem.JPG" alt="Dispenser" />
+    </h5>
+<p class="MyBlankSpace1"> </p>
+    <h3>DUAL OUTPUT POWER SUPPLY</h3>
+    <h5>This is a project that I did when i was in need of a power supply but did not have the money to buy one on the market. Thus, I
+        build this power supply for both analog and digital devices. It has a 110-120 volts input, a 12 volts output for analog
+        devices and a 5 volts output for digital devices.
+        <img src="~/Images/IMG_0578Psupply.JPG" alt="Power Supply" />
+    </h5>
+</div>
+
+<!--
+<h3>We suggest the following:</h3>
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+        enables a clean separation of concerns and that gives you full control over markup
+        for enjoyable, agile development. ASP.NET MVC includes many features that enable
+        fast, TDD-friendly development for creating sophisticated applications that use
+        the latest web standards.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
+    </li>
+
+    <li class="two">
+        <h5>Add NuGet packages and jump-start your coding</h5>
+        NuGet makes it easy to install and update free libraries and tools.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
+    </li>
+
+    <li class="three">
+        <h5>Find Web Hosting</h5>
+        You can easily find a web hosting company that offers the right mix of features
+        and price for your applications.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
+    </li>
+</ol>
+-->

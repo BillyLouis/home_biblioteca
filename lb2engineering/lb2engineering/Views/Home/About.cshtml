@@ -1,0 +1,49 @@
+﻿@model lb2engineering.Models.AboutModel
+@{
+    ViewBag.Title = "About";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+  <!--  <h2>@ViewBag.Message</h2> -->
+    <h2>@Model.Name</h2>
+</hgroup>
+        </div>
+    </section>
+}
+
+
+<p> </p>
+<h2>@Model.Description</h2>
+
+<article>
+    <p>
+        As a UNLV graduate of December 2017, I learn all the struggle one might 
+        encountered in their path of learning. Thus, this website is dedidicated 
+        to help other engineers. It will serve as an EDUCATIVE tool even for technicians and 
+        hobbyist in any field of expertise.
+        It will also allow me to help anyone who wants a work order from
+        the field of Electrical Engineering & Computer Science to any technical 
+        works such as Stick Welding, painting, Carpentry, Metal Working & Masonery.
+    </p>
+    <div class="MyBlankSpace1"> </div>
+    <div class="MyBlankSpace1"> </div>
+    <div class="MyBlankSpace1"> </div>
+    <p>
+        Special session of tutoring can also be provided, the list of subjects are provided on the right.
+    </p>
+  </article>
+
+<aside>
+    <h3>SUBJECTS</h3>
+
+    <ul>
+        <li>Calculus I, II & III</li>
+        <li>Mathematics For Engineers and Scientists</li>
+        <li>C++, Verilog, VHDL</li>
+        <li>Physics & Microelectronics</li>
+    </ul>
+</aside>
+<!-- <div> Quote: @ViewBag.Quote </div> -->

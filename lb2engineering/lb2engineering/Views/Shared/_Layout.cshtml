@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Pound to Engineering.com</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/themes/base/css")
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+
+             <div id="logo">
+                 <div class="MyCenter">
+                    <!-- <a href="@Url.Action("Index", "Home")"> -->
+                    <img src="~/Images/CaptureLogo1.JPG" alt="Headlogo"/>
+                   <!-- </a> -->
+                 </div>
+             </div>
+                <div class="MyCenter">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <div class="MyCenter">
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("FreePDF", "Index", "FreePDF")</li>
+                            <li>@Html.ActionLink("Not_UTube", "Index", "DIYvideo")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                           
+                        </ul>
+                            </div>
+                    </nav>
+                </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="MyCenter">
+                    <h4>Copyright &copy; 2019 - @DateTime.Now.Year  The ASP.NET MVC Application for www.lb2engineering.com 
+                        All Reserved. Use With Permission.
+                    </h4>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/otf")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
